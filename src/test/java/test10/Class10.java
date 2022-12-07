@@ -7,12 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.annotations.Test;
 
 public class Class10 {
 public static WebDriver driver;
-@Test
-public void Testing() throws Exception {
+public static void main (String[] args) throws Exception {
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("http://facebook.com");
